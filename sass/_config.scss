@@ -1,0 +1,58 @@
+$primary-color: #0A3258;
+$secondary-color: #C1CBD9;
+$primarylight: #54708a;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {line-height: 1; font-size: 4.6rem; letter-spacing: -0.05em;}
+h2 {line-height: 1; font-size: 3rem; letter-spacing: -0.05em;}
+h3 {font-weight: 400; font-size: 1.4rem; letter-spacing: 0.1em;}
+h4 {font-size: 1.9rem; letter-spacing: -0.05em;}
+h5 {font-size: 1.1rem; letter-spacing: 0.1em;}
+p {font-weight: 400; font-size: 1rem;}
+
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin large {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media screen and (max-width:1024px) {
+        @content;
+    }
+}
+
+
+@mixin mobile {
+    @media screen and (max-width:576px) {
+        @content;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+

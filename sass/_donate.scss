@@ -1,0 +1,127 @@
+.parallax {
+  width: 100vw;
+  overflow: hidden;
+  img {
+    height: 50%;
+  }
+  &__text {
+    height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 100px;
+    color: white;
+    h3 {
+      margin: 20px 0;
+    }
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      a {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.post-hero--mod {
+  background: url("../image/donate.png") no-repeat bottom;
+  background-size: cover;
+  .post-hero__box--mod {
+    padding: 30px;
+    height: auto;
+    * {
+      width: 20vw;
+    }
+    h4 {
+      padding: 30px 0 10px;
+    }
+    a:hover img {
+      border-radius: 200px;
+      border: 5px solid $secondary-color;
+    }
+  }
+}
+
+.pre-content {
+  &--mod {
+    background: url("../image/withchick.jpg") center;
+    background-size: cover;
+  }
+}
+
+.content {
+  &--mod {
+    width: 100vw;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 400px 400px;
+    grid-template-areas:
+      "will payroll payroll"
+      "will online donate";
+    .item {
+      .content__text--mod {
+        h3 {
+          width: 100%;
+          padding: 20px 0;
+        }
+        p {
+          padding: 20px 0 0;
+        }
+      }
+      &--g {
+        grid-area: will;
+      }
+      &--h {
+        grid-area: payroll;
+        background-color: $primarylight;
+        .content__text--mod {
+          h3 {
+            width: 45%;
+          }
+        }
+        .content__box {
+          position: absolute;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          width: 45%;
+          padding: 30px;
+          margin-right: 40px;
+          background-color: white;
+          border-radius: 6px;
+          color: black;
+        }
+      }
+
+      &--i {
+        grid-area: online;
+        p {
+          border-top: 1px solid white;
+        }
+        img {
+          height: auto;
+        }
+      }
+      &--j {
+        grid-area: donate;
+        background-color: $secondary-color;
+        position: relative;
+        h2,
+        h3 {
+          color: black;
+        }
+        a {
+          position: absolute;
+          right: 0;
+          top: 0;
+          margin: 30px;
+        }
+      }
+    }
+  }
+}

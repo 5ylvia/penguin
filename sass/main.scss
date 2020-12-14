@@ -1,0 +1,43 @@
+@import 'config';
+@import 'home';
+@import 'donate';
+@import 'form';
+@import 'menu';
+@import 'responsive';
+
+
+h1, h2, h4, p{font-family: 'Source Serif Pro', serif;}
+h3, h5 {font-family: 'Source Sans Pro', sans-serif;}
+
+
+////header////
+
+header {
+     display: flex;
+     flex-direction: column;
+ }
+
+
+////main////
+
+
+.copyright{
+     display: flex;
+     font-size: 20px;
+     padding: 20px 0 0 20px;
+     color: rgba(white,0.7);
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     width: 200px;
+     &--toggle {
+        width: 100%;
+        text-align: left;
+        background-color: rgba(white,0.5);
+        color:black;
+        font-size: 10px;
+        margin-left: 20px;
+        padding: 5px;
+      }
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <script defer src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar--open">
+            <a class="navbar__logo" href="https://5ylvia.github.io/penguin/index.html"><img src="dist/image/logo-s.png" alt="WCPT logo"></a>
+            <div class="navbar__menu">
+                <a class="navbar__btn" href="#">What we do<i class="fas fa-angle-down"></i></a>
+                <div class="dropdown">
+                    <div class="dropdown__media responsive-hide">
+                        <div class="copyright">
+                            <div class="camera-btn"><i class="fas fa-camera"></i></div>
+                            <div class="copyright--toggle">Little penguin, Christchurch, September 28, 2014. Image © Andrea Schaeffer by Andrea Schaeffer.</div>
+                        </div>
+                    </div>
+                    <div class="dropdown__menu">
+                        <div class="dropdown__header responsive-hide">
+                            <h4>Ā mātou mahi</h4>
+                            <h3>What we do</h3>
+                        </div>
+                        <div class="dropdown__item">
+                            <a href="#">Education</a>
+                            <a href="#">Birds we protect</a>
+                            <a href="#">Projests</a>
+                        </div>
+                        <div class="logo responsive-hide"><img src="dist/image/logo.png" alt="WCPT logo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__menu">
+                <a class="navbar__btn" href="#">West Coast Penguin Trust<i class="fas fa-angle-down"></i></a>
+                <div class="dropdown">
+                    <div class="dropdown__media responsive-hide">
+                        <div class="copyright">
+                            <div class="camera-btn"><i class="fas fa-camera"></i></div>
+                            <div class="copyright--toggle">Little penguin, Christchurch, September 28, 2014. Image © Andrea Schaeffer by Andrea Schaeffer.</div>
+                        </div>
+                    </div>
+                    <div class="dropdown__menu">
+                        <div class="dropdown__header responsive-hide">
+                            <h4>Ko Wai Mātou</h4>
+                            <h3>West Coast Penguin Trust</h3>
+                        </div>
+                        <div class="dropdown__item">
+                            <a href="#">About us</a>
+                            <a href="#">News</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">Resources</a>
+                        </div>
+                        <div class="logo responsive-hide"><img src="dist/image/logo.png" alt="WCPT logo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__menu">
+                <a class="navbar__btn" href="#">Support us<i class="fas fa-angle-down"></i></a>
+                <div class="dropdown">
+                    <div class="dropdown__media image responsive-hide">
+                        <div class="copyright">
+                            <div class="camera-btn"><i class="fas fa-camera"></i></div>
+                            <div class="copyright--toggle">Little penguin, Christchurch, September 28, 2014. Image © Andrea Schaeffer by Andrea Schaeffer.</div>
+                        </div>
+                    </div>
+                    <div class="dropdown__menu">
+                        <div class="dropdown__header responsive-hide">
+                            <h4>Tautoko i a mātou</h4>
+                            <h3>Support us</h3>
+                        </div>
+                        <div class="dropdown__item">
+                            <a href="#">Volunteer
+                            <a href="https://5ylvia.github.io/penguin/dist/donate.html">Donate</a>
+                            <a href="#">Partner & Sponsor</a>
+                        </div>
+                        <div class="logo responsive-hide"><img src="dist/image/logo.png" alt="WCPT logo"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__menu"><a class="navbar__btn" href="#">Contact us</a></div>
+            <a class="btn btn--mod-line responsive-hide" href="https://5ylvia.github.io/penguin/dist/donate.html">Donate</a>
+        </div>
+        <span class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </span>  
+    </header>
+    
+<main>
+    <div class="hero hero--white">
+        <img class="parallax" src="dist/image/Little penguin2.jpg" alt="Fiordland Crested Penguin">
+        <div class="copyright">
+            <div class="camera-btn"><i class="fas fa-camera"></i></div>
+            <div class="copyright--toggle">Little penguin, Christchurch, September 28, 2014. Image © Andrea Schaeffer by Andrea Schaeffer</div>
+        </div>
+        <div class="hero__text">
+            <img src="dist/image/logo.png" alt="logo">
+            <h1>Your donation to <br> West Coast <br> Penguin Trust</h1>
+        </div>
+    </div>
+
+    <form>
+        <div class="container">
+            <div class="container__btn">
+                <a href="#" class="btn btn--form hide">One Time</a>
+                <a href="#" class="btn btn--form show">Regular</a> 
+            </div>
+            <div class="container--toggle">
+                <h4>Make my donation every</h4>
+                <div class="row">
+                    <input type="radio" name="frequency" id="week">
+                    <label for="week">Week</label>
+                    <input type="radio" name="frequency" id="month">
+                    <label for="month">Month</label>
+                    <input type="radio" name="frequency" id="year">
+                    <label for="year">Year</label>
+                </div>
+            </div>
+            <div class="container__text">
+                <h4>How much would you like to donate?</h4>
+                <div class="row">
+                    <input type="radio" name="money" id="25">
+                    <label for="25">$25</label>
+                    <input type="radio" name="money" id="50">
+                    <label for="50">$50</label>
+                    <input type="radio" name="money" id="100">
+                    <label for="100">$100</label>
+                    <input type="text" id="amount" name="amount" placeholder="Other">
+                </div>
+            </div>
+            <h4>Personal information</h4>
+            <div class="row">
+                <div class="column">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname">
+                </div>
+                <div class="column">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname">    
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="address1">Address</label>
+                    <input type="text" id="address1" name="address1">    
+                </div>
+                <div class="column">
+                    <label for="address2">Address 2</label>
+                    <input type="text" id="address2" name="address2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="city">City/Town</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="column">
+                    <label for="postcode">Post code</label>
+                    <input type="text" id="postcode" name="postcode">    
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">    
+                </div>
+            </div> 
+        </div>
+        <div class="payment">
+            <h4>Payment Method</h4>
+            <div class="row">
+                <div class="column">
+                    <label for="cardnumber">Credit or Debit Card Number</label>
+                    <input type="text" id="cardnumber" name="cardnumber">
+                </div>
+                <div class="column">
+                    <label for="date">Expiry Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="column">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" name="cvc">
+                </div>
+            </div>
+            <div class="payment__text">
+                <div class="row">
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms"> Terms and conditions are for your protection - please tick to accept.</label><br>
+                </div>
+                <a href="#"><p>View Terms and Conditions</p></a>
+                <a href="https://5ylvia.github.io/penguin/dist/action.html" class="btn btn--line">Confirm Donation</a>
+            </div>
+        </div>
+    </form>
+</main>
+
+
+<footer>
+    <div class="footer">
+        <div class="footer__logo"><img src="dist/image/logo-b.png" alt="logo"></div>
+        <div class="footer__row">
+            <div class="footer__column">
+                <a href="#"><h5>What we do</h5></a>
+                <a href="#"><p>Education</p></a>
+                <a href="#"><p>Birds we protect</p></a>
+                <a href="#"><p>Projests</p></a>
+            </div>
+            <div class="footer__column">
+                <a href="#"><h5>WCPT</h5></a>
+                <a href="#"><p>About us</p></a>
+                <a href="#"><p>News</p></a>
+                <a href="#"><p>Gallery</p></a>
+                <a href="#"><p>Resources</p></a>
+            </div>
+            <div class="footer__column">
+                <a href="#"><h5>Support us</h5></a>
+                <a href="#"><p>Volunteer</p></a>
+                <a href="donate.html"><p>Donate</p></a>
+                <a href="#"><p>Partners & Sponsors</p></a>
+            </div>
+            <div class="footer__column">
+                <a href="#"><h5>Contact us</h5></a>
+            </div>
+        </div>
+        <div class="footer__socialmedia">
+            <p>Copyright © 2018 The West Coast Penguin Trust, New Zealand</p>
+            <div>
+                <p>Follow us:</p>
+                <div>
+                    <a href="https://www.facebook.com/bluepenguintrust"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://vimeo.com/user34666420"><i class="fab fa-vimeo-square"></i></a>    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+    
+</html>    

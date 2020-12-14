@@ -1,0 +1,82 @@
+.hero {
+    &--white {
+        background-color: white;
+    }
+    &__text {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        top:0;
+        color: black;
+        img {max-width: 250px; padding: 2rem;}        
+    }
+    
+}
+
+form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4,h5,p {text-align: center;}
+    .container {
+        padding-top: 100px;
+        width: 50%;
+        &--toggle {
+            padding:20px 0;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            background-color: rgba($secondary-color, 0.5);
+        }
+        &__text {
+            padding: 40px 0 30px;
+        }
+    }
+    .payment {
+        width: 70%;
+        padding: 100px 0;
+        h4 {padding-bottom: 10px; margin-bottom: 20px; border-bottom: 1px solid $secondary-color;}
+        a {text-decoration: none; p{color: $secondary-color ;padding-bottom:20px;}}
+        &__text {
+            padding: 30px 0;
+            display:flex; 
+            flex-direction: column; 
+            align-items: center;
+        }
+    }
+    .row, .container__btn {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        a {margin:0 10px}
+    }
+    .column {
+        padding: 0 5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    input[type=text], input[type=email], input[type=date]{
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border: 3px solid $secondary-color;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        &:focus {
+            border: 3px solid $primary-color;
+        }
+    }
+    input[type=radio], input[type=checkbox] {
+        margin: 5px 10px;
+    }
+    label {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #amount {padding: 3px 10px; margin-left: 10px; width: 100px;}
+}

@@ -1,0 +1,173 @@
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: flex-end;
+  font-family: "Source Sans Pro";
+  z-index: 1;
+  .navbar__menu:hover .navbar__btn {
+    background-color: rgba($primary-color, $alpha: 0.2);
+  }
+  &__menu:hover .dropdown {
+    display: flex;
+  }
+  &__menu {
+    height: 100%;
+    display: flex;
+    .navbar__btn {
+      height: 100%;
+      text-decoration: none;
+      color: $primary-color;
+      padding: 7.5px 10px;
+      > * {
+        margin-left: 10px;
+        height: 100%;
+      }
+    }
+  }
+  &__logo {
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    height: auto;
+    padding: 3px;
+    img {
+      width: 30px;
+      border: 0;
+    }
+  }
+}
+
+.dropdown {
+  display: flex;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100vw;
+  height: 300px;
+  background-color: $primary-color;
+  box-shadow: 10px 30px 50px 5px rgba(0, 0, 0, 0.4);
+  display: none;
+  &__media {
+    width: 40%;
+    background: linear-gradient(to top, rgba(black, 0.6), rgba(black, 0.2)),
+      url("../image/Little penguin4.jpg") no-repeat;
+    background-size: cover;
+  }
+  &__menu {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    color: white;
+    padding-right: 50px;
+    border-right: 1px solid white;
+  }
+  &__item {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    a {
+      flex-grow: 1;
+      padding: 10px 50px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.4rem;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    right: 0;
+    height: auto;
+    > img {
+      width: 200px;
+      margin-right: 3vw;
+      border: 0;
+    }
+  }
+  .dropdown__item a:hover {
+    background-color: rgba(white, 0.1);
+    color: white;
+  }
+}
+
+.menu-btn {
+  top: 10px;
+  position: absolute;
+  right: 1rem;
+  z-index: 1;
+  font-size: 20px;
+  color: white;
+  // cursor: pointer;
+}
+
+//////////////////butttons////////////////////////
+
+.btn {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  font-size: 1rem;
+  font-family: "Source Sans Pro";
+  border-radius: 100px;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: white;
+    color: $primary-color;
+  }
+
+  &--line:hover {
+    border: 3px solid $primary-color;
+  }
+
+  &--color-white {
+    border: 3px solid white;
+    background-color: rgba($primary-color, 0);
+  }
+  &--mod-circle {
+    width: 110px;
+    height: 110px;
+    &:hover {
+      border: 3px solid $primary-color;
+    }
+  }
+  &--mod-line {
+    margin: 2.5px 20px 2.5px 10px;
+    height: 30px;
+    width: 90px;
+    border: 3px solid $primary-color;
+    background-color: rgba($primary-color, 0);
+    color: $primary-color;
+    &:hover,
+    .btn--form:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+  &--form {
+    border: 3px solid $primary-color;
+    background-color: rgba($primary-color, 0);
+    color: $primary-color;
+    height: 50px;
+    width: 200px;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
