@@ -168,7 +168,7 @@ p {
           flex-direction: column;
   text-align: center;
   padding: 130px 0 0;
-  background: url("/dist/image/birdsweprotect.png"), url("/dist/image/birds.png") no-repeat bottom;
+  background: url("../image/birdsweprotect.png"), url("../image/birds.png") no-repeat bottom;
   background-size: cover;
   width: 100vw;
 }
@@ -218,7 +218,7 @@ p {
 }
 
 .pre-content {
-  background: url("/dist/image/Image © Ben by Ben.jpg") center;
+  background: url("../image/Image © Ben by Ben.jpg") center;
   background-size: cover;
   height: 400px;
   background-attachment: fixed;
@@ -349,7 +349,9 @@ p {
   background-color: rgba(10, 50, 88, 0.8);
 }
 
-.content__text h1, .content__text h2, .content__text h3 {
+.content__text h1,
+.content__text h2,
+.content__text h3 {
   width: 70%;
 }
 
@@ -394,7 +396,7 @@ p {
   position: relative;
   width: 100vw;
   height: 700px;
-  background: url("/dist/image/Little Penguin3.jpg") center;
+  background: url("../image/Little Penguin3.jpg") center;
   background-size: cover;
 }
 
@@ -417,7 +419,8 @@ p {
   padding: 50px;
 }
 
-.post-content__text h1, .post-content__text h3 {
+.post-content__text h1,
+.post-content__text h3 {
   color: white;
   width: 30%;
 }
@@ -570,7 +573,7 @@ p {
 }
 
 .post-hero--mod {
-  background: url("/dist/image/donate.png") no-repeat bottom;
+  background: url("../image/donate.png") no-repeat bottom;
   background-size: cover;
 }
 
@@ -593,7 +596,7 @@ p {
 }
 
 .pre-content--mod {
-  background: url("/dist/image/withchick.jpg") center;
+  background: url("../image/withchick.jpg") center;
   background-size: cover;
 }
 
@@ -674,7 +677,8 @@ p {
   position: relative;
 }
 
-.content--mod .item--j h2, .content--mod .item--j h3 {
+.content--mod .item--j h2,
+.content--mod .item--j h3 {
   color: black;
 }
 
@@ -851,7 +855,7 @@ form #amount {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   z-index: 1;
 }
 
@@ -914,8 +918,8 @@ form #amount {
 
 .dropdown__media {
   width: 40%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.2))), url("/dist/image/Little penguin4.jpg") no-repeat;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("/dist/image/Little penguin4.jpg") no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.2))), url("../image/Little penguin4.jpg") no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../image/Little penguin4.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -1001,7 +1005,7 @@ form #amount {
   width: 200px;
   height: 40px;
   font-size: 1rem;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   border-radius: 100px;
   background-color: #0A3258;
   color: white;
@@ -1047,7 +1051,8 @@ form #amount {
   color: #0A3258;
 }
 
-.btn--mod-line:hover, .btn--mod-line .btn--form:hover {
+.btn--mod-line:hover,
+.btn--mod-line .btn--form:hover {
   background-color: #0A3258;
   color: white;
 }
